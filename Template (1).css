@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    font-family: sans-serif;
+  }
+  
+  .background {
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    position:relative;
+    z-index: -1;
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .background::before {
+    background-color: blue;
+    content: "";
+    height: 1414px;
+    width: 702px;
+    margin-top: -78px;
+    margin-left: -40px;
+    margin-right: -10px;
+    z-index: -1;
+    position: absolute;
+  }
+  
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .name1 {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 2px;
+    font-size: 30px;
+  }
+
+  .name1:hover {
+    color: #ccc;
+    cursor: pointer;
+  }
+
+  .I {
+    margin-left: 20px;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  header nav ul li a:hover {
+    color: #ccc;
+  }
+  
+  .layout {
+    background-color: #eeeeee;
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+  }
+  .grid div {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-bottom: 3px solid #f54e1f;
+    position: relative;
+  }
+  .grid div span {
+    font-size: 60px;
+    position: absolute;
+    bottom: -25px;
+    right: 10px;
+    color: gray;
+  }
+  div p {
+    line-height: 1.5;
+  }
+  .name {
+    font-weight: bold;
+    margin-bottom: 2px;
+    font-size: 30px;
+  }
+
+  .name:hover {
+    color: #ccc;
+    cursor: pointer;
+  }
+
+  .job {
+    color: gray;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .about {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  .item-c,
+  .item-e,
+  .item-h {
+    background-color: black !important;
+    color: #ffffff !important;
+  }
+  .item-a {
+    grid-column: 1 / span 2;
+    grid-row: 1 / 2;
+  }
+  .item-e {
+    grid-column: 2 / span 2;
+    grid-row: 2 / 3;
+  }
+  .item-f {
+    grid-column: 2 / span 2;
+    grid-row: 3 / 4;
+  }
+  .item-d {
+    grid-column: 1 / 2;
+    grid-row: 2 / span 2;
+  }
+  .item-c {
+    grid-column: 4 / 5;
+    grid-row: 1 / span 3;
+  }
